@@ -4,45 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Halaman dengan Header Violet</title>
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .header {
-    background-color: violet;
-    width: 1250px;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .search-box input {
-    width: 400px;
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    font-size: 16px;
-  }
-
-  .content {
-    width: 1250px;
-    padding: 20px;
-  }
-
-  .section {
-    margin-bottom: 20px;
-  }
-
-  .section h2 {
-    margin-bottom: 10px;
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -53,17 +15,13 @@
     </div>
   </div>
 
-    <p>SILAHKAN PILIH BEBERAPA MACAM YANG ANDA INGIN PESAN</p>
-
+  <p>SILAHKAN PILIH BEBERAPA MACAM YANG ANDA INGIN PESAN</p>
 
   <!-- CONTENT -->
   <div class="content">
-  <!-- CONTENT -->
 
-    <!-- PARAGRAF PRODUK -->
     <p>Silahkan pilih produk yang ingin anda pesan</p>
 
-    <!-- LIST PRODUK -->
     <ul>
       <li>Sayur Kangkung</li>
       <li>Sayur Bayam</li>
@@ -74,7 +32,6 @@
       <li>Rempah-rempah</li>
     </ul>
 
-    <!-- PARAGRAF PENUTUP -->
     <p><strong>PEMESANAN DAN PEMBAYARAN MELALUI WHATSAPP DAN TRANSFER</strong></p>
 
     <div class="section">
@@ -84,9 +41,10 @@
 
     <div class="section">
       <h2>Contact</h2>
-        <a onclick="window.open('https://wa.link/g072hb');">
-      Telepon: 087840882328</a>
-            <!-- METODE PEMBAYARAN CRYPTO -->
+      <a id="waLink">Telepon: 087840882328</a>
+    </div>
+
+    <!-- METODE PEMBAYARAN CRYPTO -->
     <div class="section">
       <h2>Metode Pembayaran Menggunakan Crypto</h2>
       <p>Kami menerima pembayaran melalui beberapa jaringan crypto berikut:</p>
@@ -96,9 +54,12 @@
         <li>Bitcoin (BTC)</li>
         <li>Ethereum (ETH)</li>
       </ul>
-          <button onclick="window.open('https://portfolio.metamask.io/transfer');">click here</button>
+
+      <button id="cryptoBtn">Click Here</button>
     </div>
+
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
